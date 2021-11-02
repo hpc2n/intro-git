@@ -8,7 +8,7 @@ Tasks:
       - create a README.md file and add this text on the first line: "File created on Sep. 30, 2020" 
       - stage the file
       - commit the changes
-      - create a second file "Poem.md" without any text, stage and commit it
+      - create a second file "Poem.md" without any text (hint: use touch command), stage and commit it
       
 2. Copy and paste the two paragraphs below of the poem *la lluvia* by Jorge Luis Borges into the Poem.md file:
 Tasks:
@@ -47,7 +47,7 @@ Tarde me trae la voz, la voz deseada,
 De mi padre que vuelve y que no ha muerto.
 </code></pre>  
 
-stage the changes and commit them. Now, we have four commits refering to the same topic (same poem). 
+stage the changes and commit them. Now, we have the last four commits refering to the same topic (same poem). 
 The goal of this part of the exercise is to summarize those four commits into a single one.
 
 hint: git rebase -i HEAD~4
