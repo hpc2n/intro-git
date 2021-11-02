@@ -1,17 +1,20 @@
 ---
 title: "Lecture 1: Motivation"
-tags: Lecture, Mirko
-description: "Why use version control?"
+tags: Lecture, Birgitte, day 1
+description: "Why use version control?" 
 ---
 
-Introduction to Git --- Fall 2020
+Introduction to Git --- Fall 2021
 # Lecture 1: Why use version control?
 
 <!-- .slide: data-background="#ffffff" -->
 
+<!-- Lecture material made by Mirko Myllykoski for the version of the course that was given in fall 2020. Lecture was first given by Mirko Myllykoski in fall 2020.
+Minor modifications made by Birgitte Brydsö for the fall 2021 version of the course.-->
+
 ![](https://www.hpc2n.umu.se/sites/default/files/umu-logo-left-se.png =250x)  ![](https://www.hpc2n.umu.se/sites/default/files/hpc2n-logo-text5.png =250x)  ![](https://www.hpc2n.umu.se/sites/default/files/images/SNIC_logo_autocrop.png =250x)
 
-<small>Slides: https://hackmd.io/@hpc2n-git-2020/L1-motivation</small>
+<small>Slides: https://hackmd.io/@hpc2n-git-2021/L1-motivation#/</small>
 
 ---
 
@@ -37,7 +40,7 @@ Introduction to Git --- Fall 2020
 In an ideal world, things develop linearly: 
  - Every new version is an improvement upon the previous version. <!-- .element: class="fragment" data-fragment-index="1" -->
      - No need to backtrack. <!-- .element: class="fragment" -->
- - Everyone known what everyone else is doing <!-- .element: class="fragment" -->
+ - Everyone knows what everyone else is doing <!-- .element: class="fragment" -->
  - In the end, things are simply finished. <!-- .element: class="fragment" -->
 
 ```graphviz
@@ -54,8 +57,8 @@ digraph {
 
 ---
 
-In real world, things develop non-linearly: 
- - A new version can anything between <!-- .element: class="fragment" data-fragment-index="1" -->
+In the real world, things develop non-linearly: 
+ - A new version can be anything between <!-- .element: class="fragment" data-fragment-index="1" -->
      - a complete catastrophe and 
      - a major breakthrough.
  - People do not know what others are doing <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -161,7 +164,7 @@ digraph {
 #### How does VCS solve this?
 
  - Stores the history using snapshots (commits) <!-- .element: class="fragment" -->
-     - Each snapshot represents the project in a given point of time <!-- .element: class="fragment" -->
+     - Each snapshot represents the project at a given point in time <!-- .element: class="fragment" -->
  - Manages snapshots and associated metadata <!-- .element: class="fragment" -->
      - Naming (tags), comments, dates, authors, etc <!-- .element: class="fragment" -->
  - Easy to move between different snapshots <!-- .element: class="fragment" -->
@@ -195,7 +198,7 @@ digraph {
 
 ### Backup
 
- - VCS functions as an backup <!-- .element: class="fragment" -->
+ - VCS functions as a backup <!-- .element: class="fragment" -->
  - Locally, the system maintains a copy of each file <!-- .element: class="fragment" -->
      - Usually only the changes or the files that have changed are stored <!-- .element: class="fragment" -->
  - Globally, lost files can be recovered from the server <!-- .element: class="fragment" -->
@@ -208,6 +211,17 @@ digraph {
      - HackMD, Overleaf, ...
  - Services such as GitHub can do almost everything for you <!-- .element: class="fragment" -->
      - Store history, distribute, testing / continuous integration, bug reports, milestones, website, ... <!-- .element: class="fragment" -->
+
+---
+
+### Summing up
+
+Version control systems
+
+- keeps track of your files and other output
+- tracks what is created and modified
+- tracks who made the modifications
+- tracks why the modifications were made (if you make good commit comments)
 
 ---
 
@@ -224,6 +238,7 @@ What are the practical use cases for VCS?
  - Manage published versions (v0.1 etc) <!-- .element: class="fragment" -->
  - Manage (experimental) features <!-- .element: class="fragment" -->
  - Bug hunting <!-- .element: class="fragment" -->
+ - But also for: writers, artists, composers... <!-- .element: class="fragment" -->
 
 ---
 
@@ -240,8 +255,20 @@ What are the practical use cases for VCS?
 ### HPC: batch files and data
 
  - Track different version of your batch scripts <!-- .element: class="fragment" -->
-     - Easy to check the used configuration afterwords
+     - Easy to check the used configuration afterwards
  - Track input and output files <!-- .element: class="fragment" -->
      - Limited to smallish files
+
+---
+
+### Examples of VCS
+
+- SCCS: The first VCS. Created in 1972 at Bell Labs. Was available only for UNIX and worked with Source Code files only.
+- RCS (Revision Control System): First release July 1985. Usually superseded by other systems such as CVS, which began as a wrapper on top of RCS. 
+- CVS (centralized version control system): First release July 1986; based on RCS. Expands on RCS by adding support for repository-level change tracking, and a client-server model. 
+- Apache Subversion (SVN): First release in 2004 by CVS developers with the goal of replacing CVS. 
+- BitKeeper: Initial release May 2000. Distributed version control. Was shortly used for developing the Linux kernel. Proprietary. No longer maintained.
+- **Git**: Started by Linus Torvalds in April 2005, originally for developing the Linux kernel. Distributed version control. Open source. 
+- ...
 
 ---
