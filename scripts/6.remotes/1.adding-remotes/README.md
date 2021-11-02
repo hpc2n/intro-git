@@ -1,6 +1,6 @@
 ## Exercises
 
-1. Fork the followig repository https://github.com/bobuser2020/my-first-project.git
+1. Fork the followig repository https://github.com/pojeda/pull-request-course.git
 
 2. Clone the forked repository and check the available remotes
 
