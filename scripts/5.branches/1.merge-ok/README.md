@@ -1,8 +1,8 @@
 # Merging two local branches
 
-The purpose of this exercise is to test the command `git merge` and see that the merge goes well in this case. 
+**urpose of this exercise:** to test the command `git merge` and see that the merge goes well in this case. 
 
-Situation: The ingredient list in branch "master" has an error in the ingredients which is fixed in the branch "fixed-recipe".
+**Situation:** The ingredient list in branch "master" has an error in the ingredients which is fixed in the branch "fixed-recipe".
 
 You should make sure you are in the sub-directory "recipes". 
 
