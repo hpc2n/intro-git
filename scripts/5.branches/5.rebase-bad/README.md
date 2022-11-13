@@ -6,7 +6,7 @@ Situation: In the branch "metric" we change the recipe to use the metric system 
 
 You should make sure you are in the sub-directory "recipes" when you give the git commands. 
 
-1. Check status and history with `git status` and `git log` first, including with the following flags to `git log`: 
+1. Check status and history with `git status` and `git graph` or `git log` first, including with the following flags to `git log`: 
 
    ```
    $ git log --oneline --abbrev-commit --all --graph
@@ -36,6 +36,6 @@ You should make sure you are in the sub-directory "recipes" when you give the gi
    To abort and get back to the state before "git rebase", run "git rebase --abort".
    ```
 
-3. Use `git log` (with the above flags) and `git status` to see where the problems are. See if you can fix the conflict and then reattempt the rebase.
+3. Use `git log` (with the above flags) or `git graph`and `git status` to see where the problems are. See if you can fix the conflict and then reattempt the rebase.
 
 
