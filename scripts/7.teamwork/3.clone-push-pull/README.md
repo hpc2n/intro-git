@@ -1,16 +1,16 @@
-# Branches and merging 
+# 3. clone, push, pull
+ 
+We now have SSH keys set up. Time to test it from your own machine:
 
-1. Each person creates a branch with `git branch yourbranchname` where you put any name you want for the new branch. 
+1. Clone the repository, using the SSH address (click CODE on the GitHub repository and pick SSH). You will be asked for the key passphrase.
 
-2. Create a uniquely named file. Put anything you want in it. 
+2. Enter the local repository. Do a `git pull` and see that it works. You will have to enter the key passphrase.
 
-3. Stage and commit the file. 
+3. Create a file (or edit a file).
 
-4. Push your changes with `git push origin -u yourbranchname`
+4. Add the file. Commit the file (`git add`, `git commit`)
 
-5. When everyone has done this, all do a `git pull`
+5. Push the file. Again it will ask for the key passphrase. Success!
 
-6. Use `git status`, `git branch`, and `git log` to see what has happened. 
-
-NOTE: It is possible to make the master branch "protected" so it is not changed without a review from the owner. 
+6. NOTE: Optionally, you could run `ssh-add` to add the key. Then you will only be asked for the passphrase once per session. This is relatively safe on Linux and macOS, but **not** on Windows where it usually saves the key passphrase permanently.
 
