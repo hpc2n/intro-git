@@ -6,7 +6,8 @@ Situation: The ingredient list in branch "master" has an error in the ingredient
 
 You should make sure you are in the sub-directory "recipes" when you give the git commands. 
 
-1. First do a `git status` and a `git log` and look at the results. Also look at the output at the longer command: 
+1. First do a `git status` and a `git log` and look at the results. Also look at the output at the longer command (git graph): 
+
 
    ```
    $ git log --oneline --abbrev-commit --all --graph
@@ -20,7 +21,7 @@ You should make sure you are in the sub-directory "recipes" when you give the gi
 
 3. You should now validate the operation with `git log` and `git status`.
 
-   Also run `git log` with the following flags:  
+   Also run `git graph` or `git log` with the following flags:  
 
    ```
    $ git log --oneline --abbrev-commit --all --graph
