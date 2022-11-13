@@ -15,7 +15,7 @@ You should make sure you are in the sub-directory "recipes" when you give the gi
 
    NOTE: Remember to check with `git branch` to find out if you are on the right branch before trying to rebase. 
 
-   You will get an error similar to this: 
+   You will get an error more or less similar to this: 
 
    ```
    $ git rebase master
