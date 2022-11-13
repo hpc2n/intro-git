@@ -11,6 +11,7 @@ You should make sure you are in the sub-directory "recipes" when you give the gi
    ```
    $ git log --oneline --abbrev-commit --all --graph
    ```
+   or with the alias command `git graph`
 
    NOTE: Remember to change to the subdirectory "recipes" first!
 
