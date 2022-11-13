@@ -684,7 +684,7 @@ One of you should create a repository on GitHub and invite their team. Remember,
 
 <!-- .slide: style="font-size: 30px;" -->
 
-8. Try and merge the branches from the command line. Remember to first pull and changes from your other group members. Also remember to switch to the branch you want to merge it to (main in this case). 
+8. Try and merge the branches from the command line. Remember to first pull any changes from your other group members. Also remember to switch to the branch you want to merge it to (main in this case). 
 9. Were you succesful? Why or why not? Is there are difference between what happens when the owner of the branch tries this and when everyone else does?
 10. After doing this, everyone should again do a `git pull` (on the command line)
 11. Use `git status`, `git branch`, and `git log` to see what has happened. If you want a "prettier" and sometimes easier to read view, use `git log --graph --oneline --decorate --all` 
