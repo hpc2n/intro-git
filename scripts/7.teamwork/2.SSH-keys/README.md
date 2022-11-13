@@ -1,6 +1,6 @@
-# Creating and using SSH-keys
+# 2. Creating and using SSH-keys (if you did not do that earlier in the week/before) 
 
-It is easier to use SSH keys than to enter the GitHub username and password every time. In this exercise you create SSH keys and upload to GitHub. Then test that it works. 
+In this exercise you create SSH keys and upload to GitHub. Then test that it works.
 
 Everyone in the team should do this! 
 

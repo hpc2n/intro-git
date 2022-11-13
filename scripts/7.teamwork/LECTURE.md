@@ -551,10 +551,16 @@ In this exercise you create SSH keys and upload to GitHub. Then test that it wor
 
 **Create a new SSH key**
 
-1. Open a terminal. In the command below, "GitHub" is a label added to the key for clarity. You can add any you want: 
-```
-$ ssh-keygen -t rsa -b 4096 -C "GitHub"
-```
+1. Open a terminal (Git Bash on Windows). In the command below, "GitHub" is a label added to the key for clarity. You can add any you want: 
+    a. Do this
+    ```
+    $ ssh-keygen -t ed25519 -C "GitHub"
+    ```
+    b. If you have an older system, this may work better
+    ```
+    $ ssh-keygen -t rsa -b 4096 -C "GitHub"
+    ```
+    
 2. You will be asked for a file to save the key. Unless you have an existing SSH key, accept the default.
 3. Enter a passphrase and repeat it.
 4. Add the key to the ssh-agent. Here we assume the default name: 
