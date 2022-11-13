@@ -1,30 +1,28 @@
-# Clone, push, and pull 
+# 1. Setting up a repository on GitHub 
 
-In this exercise you will work with a repository on GitHub that one of you creates. 
+In this exercise you will create a repository on GitHub and work with that. 
 
-You will be using your GitHub username and password for this exercise
+You will be working on the GitHub website (so you need to have signed up for an account). 
 
-1. One of you should create a repository on GitHub and invite their team members. 
+1. Create a repository (click on the + at the top right of the menu or picking "Start a new repository" on your "home screen")
 
-   On the GitHub webpage the option to create a new repository is in the top right corner: click the “+”. 
+2. Under "Quick setup", pick "creating a new file".
 
-   To add members to your repository, go to “Settings” -> “Manage access”.
+3. Name the file "README.md" (at the top, over the file editor).
 
-   The team members must accept the invitation. 
+4. Put some text in the file "README.md".
 
-2. Everyone clones the repository to their local machine, using `git clone`. 
+5. At the bottom, where it says "Commit new file" you should put a useful commit message. Then click "Commit new file"
 
-   NOTE: Use the HTTPS address (click CODE to find it). See example:
+6. Notice: the content of README.md appears at top level of the repo
 
-![](https://i.imgur.com/Xbta88Y.png )
+7. Try creating another file in a subdirectory (create subdirectories by adding the name you want after the name of your repo, then adding a "/" and your filename).
 
-3. Each person then creates a file and puts it to the repository (`git add`, `git commit`, `git push`)
+8. Try adding a file that you have created on your computer and uploads (Add file -> Upload files)
 
-   NOTE: To avoid errors, do `git pull` before you stage and commit your file and use unique names for your files. 
+9. Test out making edits to your files and committing them - all through the GitHub site.
 
-4. See the changes appear to your local repository after `git pull`. 
+10. If you put a file "README.md" in a subdirectory then it will be shown as a "description" for the directory
 
-   You could check with `git log` and `git status`. 
-
-5. Optionally, you could try to push your new change before pulling the changes your team members have made. Git will complain, but you should be able to solve this kind of simple problem with `git pull --rebase` before you do `git push`
+11. When you have made some commits, try click "commits" above the files in the repo and see a list of your commits.
 

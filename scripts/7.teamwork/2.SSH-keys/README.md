@@ -1,16 +1,20 @@
-# Creating and using SSH-keys
+# 2. Creating and using SSH-keys (if you did not do that earlier in the week/before) 
 
-It is easier to use SSH keys than to enter the GitHub username and password every time. In this exercise you create SSH keys and upload to GitHub. Then test that it works. 
+In this exercise you create SSH keys and upload to GitHub. Then test that it works.
 
 Everyone in the team should do this! 
 
 **Create a new SSH key**
 
-1. Open a terminal. In the command below, "GitHub" is a label added to the key for clarity. Often your email address is used. You can add any you want: 
-
-```
-$ ssh-keygen -t rsa -b 4096 -C "GitHub"
-```
+1. Open a terminal (Git Bash on Windows). In the command below, "GitHub" is a label added to the key for clarity. You can add any you want:
+    a. Do this
+    ```
+    $ ssh-keygen -t ed25519 -C "GitHub"
+    ```
+    b. If you have an older system, this may work better
+    ```
+    $ ssh-keygen -t rsa -b 4096 -C "GitHub"
+    ```
 
 2. You will be asked for a file to save the key. Unless you have an existing SSH key, accept the default.
 
@@ -25,6 +29,8 @@ $ ssh-add ~/.ssh/id_rsa
 ```
 
 5. Switch to the `.ssh` folder, open the file `id_rsa.pub` and copy it. Do NOT add any newlines or whitespace! 
+
+
 
 **Adding the SSH key to GitHub**
 
@@ -42,9 +48,11 @@ $ ssh-add ~/.ssh/id_rsa
 
 6. Confirm your GitHub password if you are prompted for it. 
 
+
+
 **Testing the SSH keys**
 
-1. Open a terminal
+1. Open a terminal (or Git Bash) 
 
 2. `$ ssh -T git@github.com`
 
@@ -62,19 +70,5 @@ Hi bbrydsoe! You've successfully authenticated, but GitHub does not provide shel
 
 4. Verify that the resulting message contains your username. 
 
-**Using the SSH keys**
-
-We now have SSH keys set up. Try and repeat some of the things that was done in the first exercise: 
-
-1. Again clone the repository, but this time use the SSH address (click CODE on the GitHub repository and pick SSH). You will be asked for the key passphrase.
-
-2. Enter the local repository. Do a `git pull` and see that you no longer have to enter your GitHub username and password, but you do have to enter the key passphrase. 
-
-3. Create a file (or edit a file). 
-
-4. Add the file. Commit the file.
-
-5. Push the file. Again it will not ask for GitHub username and password, but only the key passphrase. Success! 
-
-6. NOTE: Optionally, you could run `ssh-add` to add the key. Then you will only be asked for the passphrase once per session. This is relatively safe on Linux and macOS, but not on Windows where it usually saves the key passphrase permanently.
+5. NOTE: Optionally, you could run `ssh-add` to add the key. Then you will only be asked for the passphrase once per session. This is relatively safe on Linux and macOS, but not on Windows where it usually saves the key passphrase permanently.
 
